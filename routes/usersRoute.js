@@ -1,5 +1,4 @@
 const express = require("express");
-const { countDocuments } = require("../models/userModel");
 const router = express.Router();
 const User = require("../models/userModel")
 const bcrypt = require('bcryptjs') 
