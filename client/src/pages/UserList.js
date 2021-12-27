@@ -3,7 +3,6 @@ import { useSelector, useDispatch } from "react-redux";
 import DefaultLayout from "../components/DefaultLayout";
 import { getAllUsers, admin } from "../redux/actions/userActions";
 import Spinner from "../components/Spinner";
-import { Col, Row} from "antd";
 
 function UserList({ match }) {
     const dispatch = useDispatch();

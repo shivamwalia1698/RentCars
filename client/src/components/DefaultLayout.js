@@ -6,14 +6,13 @@ function DefaultLayout(props) {
   const user = JSON.parse(localStorage.getItem("user"));
   const menu = (
     <Menu>
-      {user?.role === 'admin' ?
-      <Menu.Item>
-        <a href="/admin">Admin Section</a>
-      </Menu.Item>
+      {user.role === 'admin' ?
+      <><Menu.Item>
+          <a href="/admin">Admin Section</a>
+        </Menu.Item><Menu.Item>
+            <a href="/userlist">User List</a>
+          </Menu.Item></>
       :<spam></spam>}
-      <Menu.Item>
-        <a href="/userlist">User List</a>
-      </Menu.Item>
       <Menu.Item>
         <a href="/">Home</a>
       </Menu.Item>
