@@ -32,7 +32,7 @@ function UserList({ match }) {
                 <th>Email</th>
                 <th>Action</th>
                 </tr>
-                {userList.map((val, key) => {
+                {userList?.map((val, key) => {
                 return (
                     <tr key={key}>
                          <td>{key + 1}</td>
