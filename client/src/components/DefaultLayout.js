@@ -46,13 +46,13 @@ function DefaultLayout(props) {
               </h1>
 
               <Dropdown overlay={menu} placement="bottomCenter">
-                <Button>{user.username}</Button>
+                <Button>{user?.username}</Button>
               </Dropdown>
             </div>
           </Col>
         </Row>
       </div>
-      <div className="content">{props.children}</div>
+      <div className="content">{props?.children}</div>
 
       <div className="footer">
         <div className="">
